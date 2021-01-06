@@ -1,0 +1,100 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ctrl="clr-namespace:CalendarCore.Controls">
+
+    <Style TargetType="{x:Type Label}" x:Key="LABEL.WEEK">
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0 0 1 1"/>
+        <Setter Property="BorderBrush" Value="#DDDDDD"/>
+        <Setter Property="Background" Value="#F1F1F1"/>
+        <Setter Property="Padding" Value="0 4 0 4"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            Padding="{TemplateBinding Padding}">
+                        <TextBlock Text="{TemplateBinding Content}" 
+                                   VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                   HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type ListBoxItem}" x:Key="LBXI.DAY">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0 0 1 1"/>
+        <Setter Property="BorderBrush" Value="#DDDDDD"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                    <Border Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            Padding="{TemplateBinding Padding}">
+                        <TextBlock Text="{Binding Day}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                            <Setter Property="Background" Value="#FAFAFA"/>
+                        </Trigger>
+                        <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                            <Setter Property="Background" Value="#F1F1F1"/>
+                        </Trigger>
+                        <DataTrigger Binding="{Binding IsLastMonth}" Value="True">
+                            <Setter Property="Foreground" Value="#BBBBBB"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsNextMonth}" Value="True">
+                            <Setter Property="Foreground" Value="#BBBBBB"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style TargetType="{x:Type ctrl:CalendarBox}">
+        <Setter Property="AlternationCount" Value="2"/>
+        <Setter Property="ItemContainerStyle" Value="{StaticResource LBXI.DAY}"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="BorderThickness" Value="1 1 0 0"/>
+        <Setter Property="BorderBrush" Value="#DDDDDD"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ctrl:CalendarBox}">
+                    <Border BorderThickness="{TemplateBinding BorderThickness}"
+                            BorderBrush="{TemplateBinding BorderBrush}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <UniformGrid Columns="7">
+                                <Label Style="{StaticResource LABEL.WEEK}" Content="MON" Background="#FFFFEAEA"/>
+                                <Label Style="{StaticResource LABEL.WEEK}" Content="TUE" Background="#FFE8F9FF"/>
+                                <Label Style="{StaticResource LABEL.WEEK}" Content="WED" Background="#FFE1F1C5"/>
+                                <Label Style="{StaticResource LABEL.WEEK}" Content="THU" Background="#FFFFD7D7"/>
+                                <Label Style="{StaticResource LABEL.WEEK}" Content="FRI" Background="#FFE9F9E4"/>
+                                <Label Style="{StaticResource LABEL.WEEK}" Content="SAT" Background="#FFF7F6E3"/>
+                                <Label Style="{StaticResource LABEL.WEEK}" Content="SUN" Background="#FFC4DAE4"/>
+                            </UniformGrid>
+
+                            <ItemsPresenter Grid.Row="1"/>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="7"/>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
