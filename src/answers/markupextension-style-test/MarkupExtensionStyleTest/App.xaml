@@ -1,0 +1,12 @@
+﻿<Application x:Class="MarkupExtensionStyleTest.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MarkupExtensionStyleTest"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="{x:Type Button}" x:Key="BTN">
+            <Setter Property="Content" Value="{local:TestMarkup Extension=Elena}"/>
+        </Style>
+    
+    </Application.Resources>
+</Application>
