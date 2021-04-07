@@ -4,7 +4,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/QuitButtonSample;component/Design/MainMenuResource.xaml"/>
+                <ResourceDictionary Source="/RadioButtonGroup;component/Design/MainMenuResource.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
