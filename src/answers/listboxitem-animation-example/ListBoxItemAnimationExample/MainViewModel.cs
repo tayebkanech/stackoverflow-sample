@@ -4,20 +4,21 @@ namespace ListBoxItemAnimationExample
 {
 	internal class MainViewModel
 	{
-		private List<UserModel> _users;
+		private List<ActivityModel> _activities;
 
-		public List<UserModel> Users
+		public List<ActivityModel> Activities
 		{ 
-			get { return _users; }
-			set { _users = value; }
+			get { return _activities; }
+			set { _activities = value; }
 		}
 
 		public MainViewModel()
 		{
-			Users = new List<UserModel>
+			Activities = new List<ActivityModel>
 			{
-				new UserModel { Header = "Elena", SubItem = "Seoul" },
-				new UserModel { Header = "James", SubItem = "Seoul" }
+				new ActivityModel { Header = "Chapter 1 - Samba", SubItem = "Samba" },
+				new ActivityModel { Header = "Chapter 2 - Songo", SubItem = "Songo" },
+				new ActivityModel { Header = "Chapter 3 - Afrobeat", SubItem = "Afrobeat" }
 			};
 		}
 	}
