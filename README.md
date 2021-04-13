@@ -1,11 +1,11 @@
 ## Stackoverflow Activity
 
-### Question
+### <ins>Question</ins>
 🔖 **How to get git branch information about each of commit by using 'LibGit2sharp'** &nbsp; [Question](https://stackoverflow.com/questions/66314728/how-to-get-git-branch-information-about-each-of-commit-by-using-libgit2sharp) 
 
 <br />
 
-### Answer
+### <ins>Answer</ins>
 🔖 **Usercontrol - notify property change from ViewModel**  &nbsp;
 [Answer](https://stackoverflow.com/questions/65673901/usercontrol-notify-property-change-from-viewmodel/65676499#65676499) | 
 [sample](https://github.com/devncore/stackoverflow-sample/tree/main/src/answers/dependency-border-animation)
