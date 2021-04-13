@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" >
-	<Grid Background="#273060">
+	<Grid Background="#07111A">
 		<ListBox ItemsSource="{Binding Activities}" Background="Transparent" BorderBrush="Transparent" Margin="10"/>
 	</Grid>
 </Window>
