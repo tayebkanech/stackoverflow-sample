@@ -4,53 +4,53 @@
              xmlns:local="clr-namespace:ListBoxItemAnimationExample"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-<Style TargetType="{x:Type ListBoxItem}">
-	<Setter Property="Foreground" Value="White"/>
-	<Setter Property="FontWeight" Value="Bold"/>
-	<Setter Property="Width" Value="400"/>
-	<Setter Property="HorizontalAlignment" Value="Left"/>
-	<Setter Property="Template">
-		<Setter.Value>
-			<ControlTemplate TargetType="{x:Type ListBoxItem}">
-				<Border>
-					<Grid>
-						<Grid.RowDefinitions>
-							<RowDefinition/>
-							<RowDefinition Height="Auto"/>
-						</Grid.RowDefinitions>
-						<Border x:Name="header">
-							<TextBlock Text="{Binding Header}" Padding="5 10 0 10"/>
-						</Border>
-						<Grid x:Name="items" Grid.Row="1" Height="0" Opacity="0">
-							<CheckBox Content="{Binding SubItem}" VerticalAlignment="Center" Foreground="White" Margin="10 0 0 0" FocusVisualStyle="{x:Null}"/>
+	<Style TargetType="{x:Type ListBoxItem}">
+		<Setter Property="Foreground" Value="White"/>
+		<Setter Property="FontWeight" Value="Bold"/>
+		<Setter Property="Width" Value="400"/>
+		<Setter Property="HorizontalAlignment" Value="Left"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type ListBoxItem}">
+					<Border>
+						<Grid>
+							<Grid.RowDefinitions>
+								<RowDefinition/>
+								<RowDefinition Height="Auto"/>
+							</Grid.RowDefinitions>
+							<Border x:Name="header">
+								<TextBlock Text="{Binding Header}" Padding="5 10 0 10"/>
+							</Border>
+							<Grid x:Name="items" Grid.Row="1" Height="0" Opacity="0">
+								<CheckBox Content="{Binding SubItem}" VerticalAlignment="Center" Foreground="White" Margin="10 0 0 0" FocusVisualStyle="{x:Null}"/>
+							</Grid>
 						</Grid>
-					</Grid>
-				</Border>
-				<ControlTemplate.Triggers>
-					<Trigger Property="IsSelected" Value="True">
-						<Trigger.EnterActions>
-							<BeginStoryboard>
-								<Storyboard>
-									<DoubleAnimation Storyboard.TargetName="items" Storyboard.TargetProperty="Height" To="30"  BeginTime="0:0:0.2" Duration="0:0:0.3" />
-									<DoubleAnimation Storyboard.TargetName="items" Storyboard.TargetProperty="Opacity" To="1"  BeginTime="0:0:0.2" Duration="0:0:0.3" />
-								</Storyboard>
-							</BeginStoryboard>
-						</Trigger.EnterActions>
-						<Trigger.ExitActions>
-							<BeginStoryboard>
-								<Storyboard>
-									<DoubleAnimation Storyboard.TargetName="items" Storyboard.TargetProperty="Height" To="0"  Duration="0:0:0.3" />
-									<DoubleAnimation Storyboard.TargetName="items" Storyboard.TargetProperty="Opacity" To="0" Duration="0:0:0.3" />
-								</Storyboard>
-							</BeginStoryboard>
-						</Trigger.ExitActions>
-						<Setter Property="Foreground" Value="SkyBlue"/>
-						<Setter TargetName="header" Property="Background" Value="#132E47"/>
-					</Trigger>
-				</ControlTemplate.Triggers>
-			</ControlTemplate>
-		</Setter.Value>
-	</Setter>
-</Style>		
-	</Application.Resources>
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsSelected" Value="True">
+							<Trigger.EnterActions>
+								<BeginStoryboard>
+									<Storyboard>
+										<DoubleAnimation Storyboard.TargetName="items" Storyboard.TargetProperty="Height" To="30"  BeginTime="0:0:0.2" Duration="0:0:0.3" />
+										<DoubleAnimation Storyboard.TargetName="items" Storyboard.TargetProperty="Opacity" To="1"  BeginTime="0:0:0.2" Duration="0:0:0.3" />
+									</Storyboard>
+								</BeginStoryboard>
+							</Trigger.EnterActions>
+							<Trigger.ExitActions>
+								<BeginStoryboard>
+									<Storyboard>
+										<DoubleAnimation Storyboard.TargetName="items" Storyboard.TargetProperty="Height" To="0"  Duration="0:0:0.3" />
+										<DoubleAnimation Storyboard.TargetName="items" Storyboard.TargetProperty="Opacity" To="0" Duration="0:0:0.3" />
+									</Storyboard>
+								</BeginStoryboard>
+							</Trigger.ExitActions>
+							<Setter Property="Foreground" Value="SkyBlue"/>
+							<Setter TargetName="header" Property="Background" Value="#132E47"/>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>		
+    </Application.Resources>
 </Application>
