@@ -62,7 +62,7 @@ You can always share information with us and we are looking forward to it.
 🔖 **WPF XAML Relative Source Not Updating In Data Trigger [duplicate]**  &nbsp;
 [Answer](https://stackoverflow.com/questions/66215913/wpf-xaml-relative-source-not-updating-in-data-trigger/66217993#66217993) 
 
-🔖 **WPF Listbox Animation on item selected**  &nbsp;
+🏷️ **WPF Listbox Animation on item selected**  &nbsp;
 [Answer](https://stackoverflow.com/questions/67058718/wpf-listbox-animation-on-item-selected/67069419#67069419) |
 [Sample](https://github.com/devncore/stackoverflow-sample/tree/main/src/answers/listboxitem-animation-example)
 
