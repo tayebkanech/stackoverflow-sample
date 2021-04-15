@@ -1,0 +1,59 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	
+	<Style TargetType="{x:Type CheckBox}" x:Key="CHB.HUMAN">
+		<Setter Property="Command" Value="{Binding ClickCommand}"/>
+		<Setter Property="CommandParameter" Value="{Binding RelativeSource={RelativeSource Self}}"/>
+		<Setter Property="Content" Value="Human"/>
+	</Style>
+	
+	<Style TargetType="{x:Type CheckBox}" x:Key="CHB.ANIMAL">
+		<Setter Property="Command" Value="{Binding ClickCommand}"/>
+		<Setter Property="CommandParameter" Value="{Binding RelativeSource={RelativeSource Self}}"/>
+		<Setter Property="Content" Value="Animal"/>
+		<Setter Property="Margin" Value="80 0 0 0"/>
+	</Style>
+
+	<Style TargetType="{x:Type TextBlock}" x:Key="IN.TEXT">
+		<Style.Triggers>
+			<DataTrigger Binding="{Binding IsAnimal}" Value="False">
+				<Setter Property="Text" Value="Who Am I?"/>
+				<DataTrigger.EnterActions>
+					<BeginStoryboard>
+						<Storyboard>
+							<DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0"/>
+						</Storyboard>
+					</BeginStoryboard>
+				</DataTrigger.EnterActions>
+				<DataTrigger.ExitActions>
+					<BeginStoryboard>
+						<Storyboard>
+							<DoubleAnimation Storyboard.TargetProperty="Opacity" To="1"/>
+						</Storyboard>
+					</BeginStoryboard>
+				</DataTrigger.ExitActions>
+			</DataTrigger>
+			<MultiDataTrigger>
+				<MultiDataTrigger.Conditions>
+					<Condition Binding="{Binding IsAnimal}" Value="True"/>
+					<Condition Binding="{Binding IsHuman}" Value="True"/>
+				</MultiDataTrigger.Conditions>
+				<MultiDataTrigger.Setters>
+					<Setter Property="Foreground" Value="Red"/>
+					<Setter Property="Text" Value="I'm human!"/>
+				</MultiDataTrigger.Setters>
+			</MultiDataTrigger>
+			<MultiDataTrigger>
+				<MultiDataTrigger.Conditions>
+					<Condition Binding="{Binding IsAnimal}" Value="True"/>
+					<Condition Binding="{Binding IsHuman}" Value="False"/>
+				</MultiDataTrigger.Conditions>
+				<MultiDataTrigger.Setters>
+					<Setter Property="Foreground" Value="Navy"/>
+					<Setter Property="Text" Value="I'm not a human!"/>
+				</MultiDataTrigger.Setters>
+			</MultiDataTrigger>
+		</Style.Triggers>
+		<Setter Property="Margin" Value="0 20 0 0"/>
+	</Style>
+</ResourceDictionary>
