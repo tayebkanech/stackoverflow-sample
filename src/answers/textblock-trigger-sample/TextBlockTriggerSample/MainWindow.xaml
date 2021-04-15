@@ -6,7 +6,7 @@
 		xmlns:views="clr-namespace:TextBlockTriggerSample.Views"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="10">
 		<views:MainView/>
 	</Grid>
 </Window>

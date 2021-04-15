@@ -1,16 +1,18 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-	
-	<Style TargetType="{x:Type CheckBox}" x:Key="CHB.HUMAN">
-		<Setter Property="Command" Value="{Binding ClickCommand}"/>
-		<Setter Property="CommandParameter" Value="{Binding RelativeSource={RelativeSource Self}}"/>
-		<Setter Property="Content" Value="Human"/>
-	</Style>
-	
+
 	<Style TargetType="{x:Type CheckBox}" x:Key="CHB.ANIMAL">
+		<Setter Property="Focusable" Value="False"/>
 		<Setter Property="Command" Value="{Binding ClickCommand}"/>
 		<Setter Property="CommandParameter" Value="{Binding RelativeSource={RelativeSource Self}}"/>
 		<Setter Property="Content" Value="Animal"/>
+	</Style>
+
+	<Style TargetType="{x:Type CheckBox}" x:Key="CHB.HUMAN">
+		<Setter Property="Focusable" Value="False"/>
+		<Setter Property="Command" Value="{Binding ClickCommand}"/>
+		<Setter Property="CommandParameter" Value="{Binding RelativeSource={RelativeSource Self}}"/>
+		<Setter Property="Content" Value="Human"/>
 		<Setter Property="Margin" Value="80 0 0 0"/>
 	</Style>
 
