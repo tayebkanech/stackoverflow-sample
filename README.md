@@ -80,6 +80,6 @@ You can always share information with us and we are looking forward to it.
 🔖 **How do I round out all the corners on a border**  &nbsp;
 [Answer](https://stackoverflow.com/questions/66828310/how-do-i-round-out-all-the-corners-on-a-border/66883531#66883531)
 
-🔖 **multiple data trigger conditions**  &nbsp;
+🏷️ **multiple data trigger conditions**  &nbsp;
 [Answer](https://stackoverflow.com/questions/67097878/multiple-data-trigger-conditions/67103085#67103085) |
 [Sample](https://github.com/devncore/stackoverflow-sample/tree/main/src/answers/textblock-trigger-sample)
