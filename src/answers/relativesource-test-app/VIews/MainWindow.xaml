@@ -1,0 +1,15 @@
+﻿<Window x:Class="RelativeSourceTestApp.VIews.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400">
+    <Grid Background="{Binding GridBackground}">
+		<TabControl Margin="10" DataContext="{Binding G1VM}" Background="{Binding TabControlBackground}">
+			<TabItem Header="Tab Item 1">
+				<DataGrid Margin="10" ItemsSource="{Binding Users}" DataContext="{Binding RelativeSource={RelativeSource AncestorType=Window}, Path=DataContext.G2VM}"/>
+			</TabItem>
+		</TabControl>
+    </Grid>
+</Window>
