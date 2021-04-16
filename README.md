@@ -83,3 +83,16 @@ You can always share information with us and we are looking forward to it.
 🏷️ **multiple data trigger conditions**  &nbsp;
 [Answer](https://stackoverflow.com/questions/67097878/multiple-data-trigger-conditions/67103085#67103085) |
 [Sample](https://github.com/devncore/stackoverflow-sample/tree/main/src/answers/textblock-trigger-sample)
+
+🔖 **How do I use WPF bindings with RelativeSource?**  &nbsp;
+[Answer](https://stackoverflow.com/questions/84278/how-do-i-use-wpf-bindings-with-relativesource/67119194#67119194)
+
+🔖 **DependencyProperty and DataBinding?**  &nbsp;
+[Answer](https://stackoverflow.com/questions/159088/dependencyproperty-and-databinding/67103647#67103647)
+
+🔖 **C#/WPF Retrieve textbox input value**  &nbsp;
+[Answer](https://stackoverflow.com/questions/67114843/c-wpf-retrieve-textbox-input-value/67117754#67117754) |
+[Sample](https://github.com/devncore/stackoverflow-sample/tree/main/src/answers/textbox-binding-test-app)
+
+🔖 **WPF style triggered in ResourceDictionary applied to all instances?**  &nbsp;
+[Answer](https://stackoverflow.com/questions/67113182/wpf-style-triggered-in-resourcedictionary-applied-to-all-instances/67120525#67120525)
