@@ -7,7 +7,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
 	<Grid VerticalAlignment="Top">
 		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="*"/>
 			<ColumnDefinition Width="Auto"/>
 		</Grid.ColumnDefinitions>
 		
@@ -16,14 +16,13 @@
 				  CanUserAddRows="False"
 				  ItemsSource="{Binding Employees}"
 				  Grid.Column="0"
-				  AlternatingRowBackground="LightGray"
-				  Width="200"
+				  AlternatingRowBackground="#F1F1F1"
 				  Height="100">
 			<DataGrid.Columns>
 				<DataGridTextColumn Header="Name" Binding="{Binding Name}" IsReadOnly="True"/>
 				<DataGridTextColumn Header="Age" Binding="{Binding Age}" IsReadOnly="True"/>
 				<DataGridComboBoxColumn Header="DepartmentCode" 
-										SelectedValueBinding="{Binding DepartmentCode}"
+										SelectedItemBinding="{Binding Department, UpdateSourceTrigger=PropertyChanged}"
 										DisplayMemberPath="DepartmentCode">
 					<DataGridComboBoxColumn.ElementStyle>
 						<Style TargetType="{x:Type ComboBox}">
@@ -36,6 +35,7 @@
 						</Style>
 					</DataGridComboBoxColumn.EditingElementStyle>
 				</DataGridComboBoxColumn>
+				<DataGridTextColumn Header="Age" Binding="{Binding Department.DepartmentName}" IsReadOnly="True"/>
 			</DataGrid.Columns>
 		</DataGrid>
 
@@ -44,8 +44,7 @@
 				  CanUserAddRows="False"
 				  ItemsSource="{Binding Departments}"
 				  Grid.Column="1"
-				  AlternatingRowBackground="LightGray"
-				  Margin="100 0 0 0">
+				  AlternatingRowBackground="LightGray">
 			<DataGrid.Columns>
 				<DataGridTextColumn Header="Code" Binding="{Binding DepartmentCode}" IsReadOnly="True"/>
 				<DataGridTextColumn Header="Name" Binding="{Binding DepartmentName}" IsReadOnly="True"/>

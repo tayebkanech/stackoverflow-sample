@@ -10,6 +10,6 @@ namespace DatagridBindingSample.Models
 	{
 		public string Name { get; set; }
 		public int Age { get; set; }
-		public string DepartmentCode { get; set; }
+		public Department Department { get; set; }
 	}
 }
