@@ -33,7 +33,6 @@ namespace DatagridBindingSample.ViewModels
 		{
 			Employees = GetEmployees();
 			Departments = GetDepartments();
-			//todo1
 		}
 
 		private ObservableCollection<Employees> GetEmployees()
