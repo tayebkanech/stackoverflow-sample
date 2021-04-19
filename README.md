@@ -73,7 +73,7 @@ You can always share information with us and we are looking forward to it.
 🏷️ **Change the color of a Checkbox inside Listbox**  &nbsp;
 [Answer](https://stackoverflow.com/questions/66934816/change-the-color-of-a-checkbox-inside-listbox/66965664#66965664) 
 
-🏷 **Unable to see the name of items in my listbox, WPF, C#**  &nbsp;
+🏷️ **Unable to see the name of items in my listbox, WPF, C#**  &nbsp;
 [Answer](https://stackoverflow.com/questions/66890740/unable-to-see-the-name-of-items-in-my-listbox-wpf-c-sharp/66908018#66908018) |
 [Sample](https://github.com/devncore/stackoverflow-sample/tree/main/src/answers/listbox-binding-sample)
 
@@ -94,5 +94,13 @@ You can always share information with us and we are looking forward to it.
 [Answer](https://stackoverflow.com/questions/67114843/c-wpf-retrieve-textbox-input-value/67117754#67117754) |
 [Sample](https://github.com/devncore/stackoverflow-sample/tree/main/src/answers/textbox-binding-test-app)
 
-🏷 **WPF style triggered in ResourceDictionary applied to all instances?**  &nbsp;
+🏷️ **WPF style triggered in ResourceDictionary applied to all instances?**  &nbsp;
 [Answer](https://stackoverflow.com/questions/67113182/wpf-style-triggered-in-resourcedictionary-applied-to-all-instances/67120525#67120525)
+
+🔖 **MVVM DataGrid ComboBox SelectedValue Binding**  &nbsp;
+[Answer](https://stackoverflow.com/questions/67066220/mvvm-datagrid-combobox-selectedvalue-bindfing/67156416#67156416) |
+[Sample](https://github.com/devncore/stackoverflow-sample/tree/main/src/answers/datagrid-binding-sample)
+
+🔖 **How can I bind to the last item in a list?**  &nbsp;
+[Answer](https://stackoverflow.com/questions/67139476/how-can-i-bind-to-the-last-item-in-a-list/67154770#67154770) |
+[Sample](https://github.com/devncore/stackoverflow-sample/tree/main/src/answers/binding-last-index)
