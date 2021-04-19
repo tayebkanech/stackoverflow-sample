@@ -1,0 +1,14 @@
+﻿<Window x:Class="BindingLastIndex.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Background="#232323"
+        Title="MainWindow" Height="450" Width="800">
+	<StackPanel>
+		<TextBlock Text="{Binding Users.FirstUser.Name}"/>
+		<TextBlock Text="{Binding Users.LastUser.Name}"/>
+		<Button Content="Insert Items" x:Name="btn1"/>
+		<Button Content="Add Items" x:Name="btn2"/>
+	</StackPanel>
+</Window>

@@ -73,9 +73,26 @@ You can always share information with us and we are looking forward to it.
 🏷️ **Change the color of a Checkbox inside Listbox**  &nbsp;
 [Answer](https://stackoverflow.com/questions/66934816/change-the-color-of-a-checkbox-inside-listbox/66965664#66965664) 
 
-🔖 **Unable to see the name of items in my listbox, WPF, C#**  &nbsp;
+🏷 **Unable to see the name of items in my listbox, WPF, C#**  &nbsp;
 [Answer](https://stackoverflow.com/questions/66890740/unable-to-see-the-name-of-items-in-my-listbox-wpf-c-sharp/66908018#66908018) |
 [Sample](https://github.com/devncore/stackoverflow-sample/tree/main/src/answers/listbox-binding-sample)
 
 🔖 **How do I round out all the corners on a border**  &nbsp;
 [Answer](https://stackoverflow.com/questions/66828310/how-do-i-round-out-all-the-corners-on-a-border/66883531#66883531)
+
+🏷️ **multiple data trigger conditions**  &nbsp;
+[Answer](https://stackoverflow.com/questions/67097878/multiple-data-trigger-conditions/67103085#67103085) |
+[Sample](https://github.com/devncore/stackoverflow-sample/tree/main/src/answers/textblock-trigger-sample)
+
+🔖 **How do I use WPF bindings with RelativeSource?**  &nbsp;
+[Answer](https://stackoverflow.com/questions/84278/how-do-i-use-wpf-bindings-with-relativesource/67119194#67119194)
+
+🔖 **DependencyProperty and DataBinding?**  &nbsp;
+[Answer](https://stackoverflow.com/questions/159088/dependencyproperty-and-databinding/67103647#67103647)
+
+🔖 **C#/WPF Retrieve textbox input value**  &nbsp;
+[Answer](https://stackoverflow.com/questions/67114843/c-wpf-retrieve-textbox-input-value/67117754#67117754) |
+[Sample](https://github.com/devncore/stackoverflow-sample/tree/main/src/answers/textbox-binding-test-app)
+
+🏷 **WPF style triggered in ResourceDictionary applied to all instances?**  &nbsp;
+[Answer](https://stackoverflow.com/questions/67113182/wpf-style-triggered-in-resourcedictionary-applied-to-all-instances/67120525#67120525)
