@@ -7,8 +7,8 @@
              d:DesignHeight="450" d:DesignWidth="800">
 	<Grid VerticalAlignment="Top">
 		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="*"/>
-			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="3*"/>
+			<ColumnDefinition Width="2*"/>
 		</Grid.ColumnDefinitions>
 		
 		<DataGrid AutoGenerateColumns="False"
@@ -19,11 +19,12 @@
 				  AlternatingRowBackground="#F1F1F1"
 				  Height="100">
 			<DataGrid.Columns>
-				<DataGridTextColumn Header="Name" Binding="{Binding Name}" IsReadOnly="True"/>
-				<DataGridTextColumn Header="Age" Binding="{Binding Age}" IsReadOnly="True"/>
+				<DataGridTextColumn Header="Name" Binding="{Binding Name}" IsReadOnly="True" Width="70"/>
+				<DataGridTextColumn Header="Age" Binding="{Binding Age}" IsReadOnly="True" Width="50"/>
 				<DataGridComboBoxColumn Header="DepartmentCode" 
 										SelectedItemBinding="{Binding Department, UpdateSourceTrigger=PropertyChanged}"
-										DisplayMemberPath="DepartmentCode">
+										DisplayMemberPath="DepartmentCode"
+										Width="120">
 					<DataGridComboBoxColumn.ElementStyle>
 						<Style TargetType="{x:Type ComboBox}">
 							<Setter Property="ItemsSource" Value="{Binding RelativeSource={RelativeSource AncestorType=UserControl},Path=DataContext.Departments}"/>
@@ -35,7 +36,7 @@
 						</Style>
 					</DataGridComboBoxColumn.EditingElementStyle>
 				</DataGridComboBoxColumn>
-				<DataGridTextColumn Header="Age" Binding="{Binding Department.DepartmentName}" IsReadOnly="True"/>
+				<DataGridTextColumn Header="DepartmentName" Binding="{Binding Department.DepartmentName}" IsReadOnly="True" Width="*"/>
 			</DataGrid.Columns>
 		</DataGrid>
 
@@ -44,10 +45,11 @@
 				  CanUserAddRows="False"
 				  ItemsSource="{Binding Departments}"
 				  Grid.Column="1"
-				  AlternatingRowBackground="LightGray">
+				  Width="250"
+				  AlternatingRowBackground="#F1F1F1">
 			<DataGrid.Columns>
-				<DataGridTextColumn Header="Code" Binding="{Binding DepartmentCode}" IsReadOnly="True"/>
-				<DataGridTextColumn Header="Name" Binding="{Binding DepartmentName}" IsReadOnly="True"/>
+				<DataGridTextColumn Header="Code" Binding="{Binding DepartmentCode}" IsReadOnly="True" Width="100"/>
+				<DataGridTextColumn Header="Name" Binding="{Binding DepartmentName}" IsReadOnly="True" Width="*"/>
 			</DataGrid.Columns>
 		</DataGrid>
 	</Grid>
