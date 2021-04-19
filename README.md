@@ -104,3 +104,6 @@ You can always share information with us and we are looking forward to it.
 🔖 **How can I bind to the last item in a list?**  &nbsp;
 [Answer](https://stackoverflow.com/questions/67139476/how-can-i-bind-to-the-last-item-in-a-list/67154770#67154770) |
 [Sample](https://github.com/devncore/stackoverflow-sample/tree/main/src/answers/binding-last-index)
+
+🔖 **How to change the title size of a plot in pandas (matplotlib)?**  &nbsp;
+[Answer](https://stackoverflow.com/questions/67153554/how-to-change-the-title-size-of-a-plot-in-pandas-matplotlib/67156938#67156938) 
