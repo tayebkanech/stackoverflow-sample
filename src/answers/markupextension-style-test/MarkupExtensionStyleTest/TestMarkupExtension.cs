@@ -9,18 +9,18 @@ using System.Windows.Markup;
 
 namespace MarkupExtensionStyleTest
 {
-    public class TestMarkup : MarkupExtension
+public class TestMarkup : MarkupExtension
+{
+    public string Extension { get; set; }
+
+    public override object ProvideValue(IServiceProvider serviceProvider)
     {
-        public string Extension { get; set; }
-
-        public override object ProvideValue(IServiceProvider serviceProvider)
+        var target = (IProvideValueTarget)serviceProvider.GetService(typeof(IProvideValueTarget));
+        if (target.TargetObject is Button ctl)
         {
-            var target = (IProvideValueTarget)serviceProvider.GetService(typeof(IProvideValueTarget));
-            if (target.TargetObject is Button ctl)
-            {
 
-            }
-            return Extension;
         }
+        return Extension;
     }
+}
 }
