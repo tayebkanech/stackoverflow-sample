@@ -111,3 +111,7 @@ You can always share information with us and we are looking forward to it.
 🏷️ **Why does the Data Binding in my Textbox not work?**  &nbsp;
 [Answer](https://stackoverflow.com/questions/67157425/why-does-the-data-binding-in-my-textbox-not-work/67171428#67171428) |
 [Sample](https://github.com/devncore/stackoverflow-sample/tree/main/src/answers/textbox-databinding-sample)
+
+🏷️ **How to Use Inheritance With MVVM in the Right Way**  &nbsp;
+[Answer](https://stackoverflow.com/questions/67140714/how-to-use-inheritance-with-mvvm-in-the-right-way/67158068#67158068) |
+[Sample](https://github.com/devncore/stackoverflow-sample/tree/main/src/answers/multiple-Inheritance-Items/MultipleInheritanceItems)
