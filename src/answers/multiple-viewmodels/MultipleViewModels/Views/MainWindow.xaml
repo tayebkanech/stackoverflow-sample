@@ -1,0 +1,20 @@
+﻿<Window x:Class="MultipleViewModels.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ctrl="clr-namespace:MultipleViewModels.Controls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+		<TabControl>
+			<TabItem Header="First Tab" DataContext="{Binding ListData}">
+				<ctrl:ExtDataGrid ItemsSource="{Binding Users}" IsReadOnly="True" DoubleClickCommand="{Binding DoubleClickCommand}"/>
+				
+			</TabItem>
+			<TabItem Header="Second Tab" DataContext="{Binding DisplayData}">
+				<TextBlock Text="{Binding Time}"/>
+			</TabItem>
+		</TabControl>
+	</Grid>
+</Window>
