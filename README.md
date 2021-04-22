@@ -115,3 +115,9 @@ You can always share information with us and we are looking forward to it.
 🏷️ **How to Use Inheritance With MVVM in the Right Way**  &nbsp;
 [Answer](https://stackoverflow.com/questions/67140714/how-to-use-inheritance-with-mvvm-in-the-right-way/67158068#67158068) |
 [Sample](https://github.com/devncore/stackoverflow-sample/tree/main/src/answers/multiple-Inheritance-Items/MultipleInheritanceItems)
+
+🔖 **Delete seaborn boxplot y label on pyplot subplots**  &nbsp;
+[Answer](https://stackoverflow.com/questions/67180657/delete-seaborn-boxplot-y-label-on-pyplot-subplots/67181421#67181421)
+
+🔖 **How to apply pandas style to multiple columns**  &nbsp;
+[Answer](https://stackoverflow.com/questions/67200699/how-to-apply-pandas-style-to-multiple-columns/67207675#67207675)
