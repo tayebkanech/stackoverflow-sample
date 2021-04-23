@@ -119,5 +119,5 @@ You can always share information with us and we are looking forward to it.
 🔖 **Delete seaborn boxplot y label on pyplot subplots**  &nbsp;
 [Answer](https://stackoverflow.com/questions/67180657/delete-seaborn-boxplot-y-label-on-pyplot-subplots/67181421#67181421)
 
-🔖 **How to apply pandas style to multiple columns**  &nbsp;
+🏷️ **How to apply pandas style to multiple columns**  &nbsp;
 [Answer](https://stackoverflow.com/questions/67200699/how-to-apply-pandas-style-to-multiple-columns/67207675#67207675)
