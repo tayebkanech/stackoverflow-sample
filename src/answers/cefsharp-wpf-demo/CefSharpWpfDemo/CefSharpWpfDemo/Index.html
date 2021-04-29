@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>CefSharpTest</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container"> 
+        <h2>chromeAPI.ShowMessage(string);</h2> 
+        <label for="txtMsg">Message: <input type="text" id="txtMsg" class="form-control" /></label> 
+        <button class="btn btn-primary" id="sendMsg">팝업메시지</button> 
+    </div>
+
+    <script>
+		$(document).ready(function (e) {
+			$('#sendMsg').on("click", function () {
+				var strMsg = $('#txtMsg').val();
+				cAPI.showMsg(strMsg);
+			});
+        });
+    </script>
+</body>
+</html>
