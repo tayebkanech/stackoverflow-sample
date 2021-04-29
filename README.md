@@ -121,3 +121,6 @@ You can always share information with us and we are looking forward to it.
 
 🏷️ **How to apply pandas style to multiple columns**  &nbsp;
 [Answer](https://stackoverflow.com/questions/67200699/how-to-apply-pandas-style-to-multiple-columns/67207675#67207675)
+
+🔖 **How to change Color Inside a Window.Resources C# WPF**  &nbsp;
+[Answer](https://stackoverflow.com/questions/67302933/how-to-change-color-inside-a-window-resources-c-sharp-wpff/67309545#67309545)
