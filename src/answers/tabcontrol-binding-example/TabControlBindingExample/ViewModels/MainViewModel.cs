@@ -22,9 +22,9 @@ namespace TabControlBindingExample.ViewModels
 				if (win is null || !win.IsVisible)
 				{ 
 					win = new TabsWindow();
+					win.Show();
 				}
 				win.SetTab(btn.Content.ToString());
-
 			}
 		}
 	}

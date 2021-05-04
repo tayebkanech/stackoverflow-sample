@@ -28,11 +28,6 @@ namespace TabControlBindingExample
 		internal void SetTab(string content)
 		{
 			tab.SelectedIndex = int.Parse(content) - 1;
-
-			if (!IsActive)
-			{
-				Show();
-			}
 		}
 	}
 }
