@@ -12,8 +12,7 @@
 					<StackPanel>
 						<TextBlock Text="Original"/>
 						<TextBlock Text="{Binding}"/>
-						<ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}"
-											DataContext="{Binding}"/>
+								<ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}" ContentSource="DataContext"/>
 					</StackPanel>
 				</Border>
 			</ControlTemplate>
